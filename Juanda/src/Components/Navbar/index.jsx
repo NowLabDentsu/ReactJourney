@@ -2,15 +2,21 @@ import { NavLink } from "react-router-dom";
 import { ShoppingCartContext } from "../../Context";
 import "./navbar.css"
 import { useContext } from "react";
+import carrito from "../../assets/carro-de-la-carretilla.png"
 
 const Navbar = () =>{
 
-    const {count,setSearchByCategory, cardProducts} = useContext(ShoppingCartContext);
+    const {openChecKoutSideMenu,setSearchByCategory, cardProducts} = useContext(ShoppingCartContext);
 
     let activeStyle ={
         textDecoration:"underline",
     }
-    
+
+    const verDetalle = () => {
+        console.log("Mostrar Carrito");
+       // setCardProducts([...cardProducts, productData]);
+        openChecKoutSideMenu();
+    }
     return (
         <nav className="navbar">
             <ul className="navbar ul">
@@ -48,9 +54,6 @@ const Navbar = () =>{
             </ul>
             <ul className="navbar ul">
                 <li>
-                    juancho@franco.com
-                </li>
-                <li>
                     <NavLink to='/my-orders'
                      style={({isActive}) => isActive ? activeStyle : undefined}>
                         Mis Pedidos
@@ -68,8 +71,9 @@ const Navbar = () =>{
                        Iniciar sesión
                     </NavLink>
                 </li>
-                <li>
-                    🚗 {cardProducts.length}
+                <li className="containerCarrito" onClick={() => verDetalle()}>
+                    <img src={carrito} alt="carrito" />
+                    <span>{cardProducts.length}</span>
                 </li>
             </ul>
         </nav>

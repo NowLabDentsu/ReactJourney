@@ -48,3 +48,24 @@ ul.navbar.ul li a {
     font-size: 14px;
     font-family: system-ui;
 }
+
+
+.containerCarrito {
+    min-width: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+.containerCarrito img{
+    width: 20px;
+}
+
+.containerCarrito span{
+    font-family: sans-serif;
+    color: #030a70;
+    font-weight: 600;
+}

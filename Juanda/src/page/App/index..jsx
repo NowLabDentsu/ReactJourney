@@ -33,17 +33,11 @@ const App = () => {
   return (
 
     <ShoppingCartProvider>
-
       <BrowserRouter>
-
         <Navbar />
-
         <AppRoutes />
-
         <CheckoutSideMenu />
-
       </BrowserRouter>
-
     </ShoppingCartProvider>
 
   )

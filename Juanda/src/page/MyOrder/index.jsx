@@ -19,10 +19,10 @@ function MyOrder() {
 
   return (
     <Layout>
-      My Order
+      mi orden
       <span>
           <Link to="/my-orders" className="">
-            <span>my orders ➜</span>
+            <span>mi orden ➜</span>
           </Link>
         </span>
         <div className='containerItemsOrden'>

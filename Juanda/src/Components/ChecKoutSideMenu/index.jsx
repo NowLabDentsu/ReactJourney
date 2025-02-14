@@ -49,7 +49,7 @@ const ChecKoutSideMenu = () => {
             className={isChecKoutSideMenu ? "detalle-Activado" : "detalle-Inactivo"}
         >
             <div className='containerCerrar'>
-                <h2 className='titulo-Detalle'>My Order</h2>
+                <h2 className='titulo-Detalle'>Mi cuenta</h2>
                 <div onClick={() => cerrarModales()} className='containerIconoCerrar'>
                     x
                 </div>
