@@ -1,0 +1,29 @@
+
+.TextoBuscador {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.TextoBuscador h1 {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 0;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.buscadorInput {
+    width: 90%;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+}
+
+@media (max-width: 600px) {
+.TextoBuscador{
+    width: 90%;
+}
+}

@@ -1,0 +1,22 @@
+
+.cardContainerPrin .contenedorBotonVer {
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardContainerPrin .contenedorBotonVer>button {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 100px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 18px;
+        color: black;
+}
+
+.cardContainerPrin .contenedorBotonVer>button:hover {
+    background: #afb0b5;
+}
