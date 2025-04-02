@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    position: relative;
+
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+/* .contenedor {
+    width: auto;
+    max-width: 100%;
+    margin: 0 72px;
+    /* padding: 20px;
+} */

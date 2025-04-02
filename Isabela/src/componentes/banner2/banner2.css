@@ -1,0 +1,140 @@
+.banner-section {
+    padding: 48px 0;
+    background: #8ebed1;
+}
+
+.contenedor-banner-prin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+    gap: 100px;
+}
+
+.contenido-izquierda-ban {
+    flex: 40%;
+}
+
+.img-banner-principal {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.contenido-derecha-ban {
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contenido-derecha-ban .titulo-banner-prin {
+    font-family: "Permanent Marker", cursive;
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+.contenido-derecha-ban .descripcion-banner-prin {
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+
+}
+
+.botones-ban {
+    display: flex;
+    gap: 8px;
+
+}
+
+.btn-inicial a {
+    width: auto;
+    max-width: 254px;
+    padding: 8px 16px;
+    border-radius: 100px;
+    background-color: #A5D1E7;
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
+    font-weight: 300;
+    font-size: 18px;
+    font-weight: 700;
+
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+
+
+}
+.btn-inicial a:hover{
+    background-color: #E5F2FA;
+
+}
+
+.btn-secundario a {
+    width: auto;
+    max-width: 254px;
+    padding: 8px 16px;
+    border-radius: 100px;
+    background: #C3E7F6;
+    font-family: "Montserrat", sans-serif;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+
+}
+
+.btn-secundario a:hover{
+    background-color: #E5F2FA;
+}
+
+/* MEDIA QUERY -----------------------------*/
+
+@media (max-width: 768px) {
+
+    .contenedor-banner-prin {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 578px) {
+
+
+
+    .contenedor-banner-prin {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+    }
+
+    .contenido-derecha-ban .titulo-banner-prin {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .contenido-derecha-ban .descripcion-banner-prin {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .botones-ban {
+        flex-direction: column;
+    }
+}
